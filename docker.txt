@@ -1,0 +1,12 @@
+Репозиторий https://hub.docker.com/repository/docker/olisher45/exam_30_09/general
+
+Команды 
+docker build -t Result .- собрать в файл с именем Result
+
+Для загрузки на сервер
+docker build -t olisher45/exam_30_09 .
+docker login
+docker push olisher45/exam_30_09
+
+Для запуска с перебрасыванием портов
+docker run -p 33333:33333 olisher45/exam_30_09 .
